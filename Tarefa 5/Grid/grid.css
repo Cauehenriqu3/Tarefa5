@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(192, 192, 192);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: aliceblue;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-areas:
+        "header header header"
+        "aside main main"
+        "footer footer footer";
+    grid-template-columns: 20vw auto auto;
+    grid-template-rows: 90px calc(100vh - 100px - 50px) 50px;
+}
+
+.header {
+    background-color: rgb(255, 0, 0);
+    display: grid;
+    grid-area: header;
+    padding: 10px;
+}
+
+.aside {
+    background-color: rgb(0, 0, 255);
+    display: grid;
+    grid-area: aside;
+    padding: 10px;
+}
+
+.main {
+    background-color: rgb(255, 0, 255);
+    display: grid;
+    grid-area: main;
+    padding: 10px;
+}
+
+.footer {
+    background-color: rgb(0, 255, 0);
+    display: grid;
+    grid-area: footer;
+    padding: 10px;
+  
+}
